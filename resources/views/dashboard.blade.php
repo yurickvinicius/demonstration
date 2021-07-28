@@ -26,6 +26,7 @@
 
   <!-- Template Main CSS File -->
   <link href="{{ asset('/template/assets/css/style.css') }}" rel="stylesheet">
+  <link href="{{ asset('/template/assets/css/my.css') }}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Baker - v2.2.1
@@ -70,6 +71,42 @@
 
   <main id="main">
 
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{{ asset('/template/assets/img/clients/mysql.png') }}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{{ asset('/template/assets/img/clients/postgresql.png') }}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{{ asset('/template/assets/img/clients/git.png') }}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{{ asset('/template/assets/img/clients/php.png') }}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{{ asset('/template/assets/img/clients/laravel.png') }}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{{ asset('/template/assets/img/clients/javascript-1.png') }}" class="img-fluid" alt="">
+          </div>
+
+        </div>
+        
+
+      </div>
+    </section><!-- End Clients Section -->
+
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container text-center">
@@ -87,7 +124,7 @@
                 <h4>Curriculum</h4>
                 
                 <div>
-                  <button type="button" class="generationButton">
+                  <button type="button" class="generationButton" data-toggle="modal" data-target="#exampleModal">
                     Click Here
                   </button>
                 </div>
@@ -167,32 +204,23 @@
         <div class="row">
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-blue">
-              <div class="icon">
-                <i class="bx bxl-dribbble"></i>
-              </div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            <div class="icon-box">
+              <img src="{{ asset('/template/assets/img/clients/mysql.png') }}" class="img-fluid img-150-100" alt="">              
+              <p class="pt-3">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-orange ">
-              <div class="icon">
-                <i class="bx bx-file"></i>
-              </div>
-              <h4><a href="">Sed Perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            <div class="icon-box">
+              <img src="{{ asset('/template/assets/img/clients/postgresql.png') }}" class="img-fluid img-150-100" alt="">
+              <p class="pt-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-pink">
-              <div class="icon">
-                <i class="bx bx-tachometer"></i>
-              </div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            <div class="icon-box">
+              <img src="{{ asset('/template/assets/img/clients/php.png') }}" class="img-fluid img-150-100" alt="">
+              <p class="pt-3">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
             </div>
           </div>
 
@@ -560,6 +588,10 @@
 
   <!-- Template Main JS File -->
   <script src="{{ asset('/template/assets/js/main.js') }}"></script>
+
+  <!--- #### Modal #### --->
+  @include('modal.curriculum')
+  <!---- Fim Modal  ---->
 
 </body>
 
