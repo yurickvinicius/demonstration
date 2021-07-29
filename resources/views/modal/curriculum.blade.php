@@ -1,5 +1,5 @@
   <!--####### Modal ########-->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="modalCurriculum" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" style="max-width:80%" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -13,7 +13,7 @@
             <div class="container" style="font-family: Georgia, sans-serif;">
                 <div class="row"> 
                     <div class="col-sm">
-                        <img src="{{ asset('/template/assets/img/team/team-1.jpg') }}" class="img-curriculum" alt="">
+                        <img src="{{ asset('/template/assets/img/team/yuri-1.jpg') }}" class="img-curriculum" alt="">
                     </div>
                     <div class="col-sm pt-5">
                         <div class="row">

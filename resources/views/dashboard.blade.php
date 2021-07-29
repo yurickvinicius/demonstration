@@ -63,9 +63,9 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center justify-content-center">
     <div class="container position-relative">
-      <h1>Welcome to my Web Page</h1>
-      <h2>I'm an experienced full-stack web systems developer</h2>
-      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+      <h1>Bem-vindo ao meu Web Site</h1>
+      <h2>Sou um desenvolvedor experiente de sistemas web full-stack</h2>
+      <a href="#about" class="btn-get-started scrollto">Vamos Começar</a>
     </div>
   </section><!-- End Hero -->
 
@@ -114,9 +114,9 @@
         <div class="row">
           
           <div class="col-lg-12 pt-4 pt-lg-0">
-            <h3>Technology Lover</h3>
+            <h3>Amante de Tecnologia</h3>
             <p>
-            More than fifteen years working and studying in the area of information technology with a focus mainly on developing systems for the web using the PHP language. Below is some relevant information such as curriculum and test system.
+            Mais de quinze anos trabalhando e estudando na área de tecnologia da informação com foco principalmente no desenvolvimento de sistemas para web utilizando a linguagem PHP. Abaixo estão algumas informações relevantes, como currículo e sistema de teste.
             </p>
             <div class="row">
               <div class="col-md-4">
@@ -124,22 +124,21 @@
                 <h4>Curriculum</h4>
                 
                 <div>
-                  <button type="button" class="generationButton" data-toggle="modal" data-target="#exampleModal">
+                  <button type="button" class="generationButton" data-toggle="modal" data-target="#modalCurriculum">
                     Click Here
                   </button>
                 </div>
-                
+
               </div>
               <div class="col-md-4">
                 <i class="bx bx-play-circle"></i>
                 <h4>Audio Recording</h4>
                 
                 <div>
-                  <button type="button" class="generationButton">
-                    Click Here
-                  </button>
+                  <audio controls>
+                    <source src="{{ asset('/audio/grav.mp3') }}" type="audio/mpeg">
+                  </audio>
                 </div>
-
               </div>
 
               <div class="col-md-4">
@@ -147,50 +146,18 @@
                 <h4>System Test</h4>
                 
                 <div>
-                  <button type="button" class="generationButton">
+                  <button type="button" class="generationButton" data-toggle="modal" data-target="#modalSystem">
                     Click Here
                   </button>
                 </div>
-
               </div>
-              
+              @include('modal.system')
             </div>
           </div>
         </div>
 
       </div>
     </section><!-- End About Section -->
-
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts section-bg">
-      <div class="container">
-
-        <div class="row counters">
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">232</span>
-            <p>Clients</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">521</span>
-            <p>Projects</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">1,463</span>
-            <p>Hours Of Support</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">15</span>
-            <p>Hard Workers</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Counts Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -259,19 +226,6 @@
       </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container">
-
-        <div class="text-center">
-          <h3>Call To Action</h3>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="cta-btn" href="#">Call To Action</a>
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
-
     <!-- ======= Team Section ======= -->
     <section id="profile" class="team section-bg">
       <div class="container">
@@ -286,7 +240,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
-                <img src="{{ asset('/template/assets/img/team/team-1.jpg') }}" class="img-fluid" alt="">
+                <img src="{{ asset('/template/assets/img/team/yuri-1.jpg') }}" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
@@ -589,10 +543,13 @@
   <!-- Template Main JS File -->
   <script src="{{ asset('/template/assets/js/main.js') }}"></script>
 
-  <!--- #### Modal #### --->
-  @include('modal.curriculum')
-  <!---- Fim Modal  ---->
-
 </body>
 
 </html>
+
+<!--- #### Modal #### --->
+
+
+@include('modal.curriculum')
+
+<!---- Fim Modal  ---->
