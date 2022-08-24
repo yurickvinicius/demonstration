@@ -82,7 +82,7 @@
                     <ul>
                         <li>
                             <p>
-                            Atualmente estou no ultimo ano do curso Tecnológica em Sistemas para Internet da
+                            Atualmente estou no ultimo ano do curso Tecnologica em Sistemas para Internet da
                             Universidade Tecenologica Federal do Paraná porém este encontra-se trancado.
                             </p>
                         </li>
